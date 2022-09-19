@@ -1,1 +1,1 @@
-print("Vega fuma eeeemeta")
+print("Vega fuma errreeemeta")
