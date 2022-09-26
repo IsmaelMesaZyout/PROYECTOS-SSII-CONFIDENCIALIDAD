@@ -30,7 +30,7 @@ file = open("./registro.txt", "w")
 file.close()
 
 while(True):
-    time.sleep(1800) 
+    time.sleep(5) 
     val1 = "SELECT * FROM segundatabla" #se saca la lista del sql
     val1 = run_query(val1)
     v = FuncionHash.getmd5file("C:/Users/Ismael/Desktop/new.csv")
