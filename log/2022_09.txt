@@ -1,0 +1,11 @@
+Día 27 a las 10:06:  ACIERTO - El arhivo no ha sido alterado
+Día 27 a las 10:06:  FALLO - El/Los archivo/s ['new'] ha/n sido modificado/s
+Día 27 a las 10:06:  FALLO - El/Los archivo/s ['new'] ha/n sido modificado/s
+Día 27 a las 10:06:  FALLO - El/Los archivo/s ['new'] ha/n sido modificado/s
+
+Han ocurrido un total de 3 fallosDía 27 a las 10:10:  FALLO - El/Los archivo/s ['horario_provisional', 'ssii'] ha/n sido modificado/s
+Día 27 a las 20:28:  FALLO - El/Los archivo/s ['new', 'horario_provisional', 'ssii'] ha/n sido modificado/s
+Día 27 a las 20:29:  FALLO - El/Los archivo/s ['new', 'horario_provisional', 'ssii'] ha/n sido modificado/s
+Día 27 a las 20:44:  FALLO - El/Los archivo/s ['new', 'horario_provisional', 'ssii'] ha/n sido modificado/s
+Día 27 a las 20:48:  FALLO - El/Los archivo/s ['new', 'horario_provisional', 'ssii'] ha/n sido modificado/s
+Día 27 a las 20:49:  FALLO - El/Los archivo/s ['new', 'horario_provisional', 'ssii'] ha/n sido modificado/s
