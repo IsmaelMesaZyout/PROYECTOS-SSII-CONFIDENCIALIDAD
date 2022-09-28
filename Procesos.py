@@ -3,6 +3,7 @@ from multiprocessing.resource_sharer import stop
 import FuncionHash
 import AperturaBaseDatos
 import time
+import os
 
 def run_query(query=''):    
     cursor = AperturaBaseDatos.connection.cursor()
@@ -22,28 +23,32 @@ def comprobacion(user_input):
 
 suma = 0
 suma1 = 0
+val = []
+path = "C:/Users/Ismael/Desktop/ficheros"
+ficheros = os.listdir(path) 
+for fichero in ficheros:
+    if os.path.isfile(os.path.join(path, fichero)):
+        t = FuncionHash.getmd5file("C:/Users/Ismael/Desktop/ficheros/" + fichero)
+        val.append((fichero,t)) 
 
-v = FuncionHash.getmd5file("C:/Users/Ismael/Desktop/new.csv")
-p = FuncionHash.getmd5file("C:/Users/Ismael/Desktop/horario_provisional.png")
-x = FuncionHash.getmd5file("C:/Users/Ismael/Desktop/ssii.txt")
-val =[
-    ("new",v),
-    ("horario_provisional",p),
-    ("ssii", x)
-]
 
+for i in val:           
+    AperturaBaseDatos.cursor.execute("INSERT INTO terceratabla(Nombre,NumeroHash) VALUES (%s, %s)",(i[0], i[1]))
+    AperturaBaseDatos.connection.commit()
 cont = 0
-for i in val:
-    if(cont == len(val)):
-        sql1 = "UPDATE terceratabla SET NumeroHash ='"+ i[1] + "'"
+while(True):
+    for i in val:   
+        sql1 = "UPDATE terceratabla SET NumeroHash ='"+ i[1] + "' WHERE Nombre ='"+ i[0] + "' "
         AperturaBaseDatos.cursor.execute(sql1)
         AperturaBaseDatos.connection.commit()
-    else:          
-        AperturaBaseDatos.cursor.execute("INSERT INTO terceratabla(Nombre,NumeroHash) VALUES (%s, %s)",(i[0], i[1]))
-        AperturaBaseDatos.connection.commit()
-        cont += 1
 
-while(True):                
+    path = "C:/Users/Ismael/Desktop/ficheros"
+    ficheros = os.listdir(path) 
+    for fichero in ficheros:
+        if os.path.isfile(os.path.join(path, fichero)):
+            t = FuncionHash.getmd5file("C:/Users/Ismael/Desktop/ficheros/" + fichero)
+            val.append((fichero,t))
+                  
     user_input1 = input("¿Qué fichero quieres comprobar? Introduce el codigo de validacion del archivo: ")
     comprobacion(user_input1)
     val3 = "SELECT SumaHashNumero, Nombre FROM terceratabla"
@@ -53,16 +58,18 @@ while(True):
         if(str(user_input1) == str(t[0])):
             val1 = "SELECT NumeroHash FROM terceratabla WHERE SumaHashNumero='" + str(user_input1) + "'"
             val1 = run_query(val1)
-            print(val1)
-            val2 = "SELECT NumeroHash FROM segundatabla WHERE Nombre='" + str(t[1]) + "'"
+            val2 = "SELECT * FROM segundatabla WHERE Nombre='" + str(t[1]) + "'"
             val2 = run_query(val2)
-            print(val2)
             if(comprobacion(user_input1)==True):
-                suma = str(t[0]) + str(val2[0][0]) #Servidor
+                suma = str(t[0]) + str(val2[0][1]) #Servidor
                 suma1 = str(user_input1) + str(val1[0][0]) #Cliente
                 if(suma1 == suma):
                     print("OK")
-                    exit()    
                 else:
                     print("NO OK")
-                    exit()       
+                    print(val2)
+                    m = "UPDATE terceratabla SET NumeroHash ='"+ val2[0][1] + "' WHERE Nombre ='"+ str(val2[0][0]) + "'"                    
+                    AperturaBaseDatos.cursor.execute(m)
+                    AperturaBaseDatos.connection.commit()
+
+                    #poner que se restaure la base de datos 3       

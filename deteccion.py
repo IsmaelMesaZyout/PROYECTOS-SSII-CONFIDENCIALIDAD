@@ -4,20 +4,6 @@ import os
 import AperturaBaseDatos
 from datetime import datetime
 
-sql = "INSERT INTO segundatabla(Nombre,NumeroHash) VALUES (%s, %s)"
-#sql1 = "INSERT INTO segundatabla(Nombre,NumeroHash, ID) VALUES (%s, %s, %s)"
-p = FuncionHash.getmd5file("C:/Users/Ismael/Desktop/horario_provisional.png")
-v = FuncionHash.getmd5file("C:/Users/Ismael/Desktop/new.csv")
-x = FuncionHash.getmd5file("C:/Users/Ismael/Desktop/ssii.txt")
-
-lista = []
-val =[  
-        ("new",v),
-        ("horario_provisional",p),
-        ("ssii",x)
-    ]
-AperturaBaseDatos.cursor.executemany(sql,val)
-AperturaBaseDatos.connection.commit()
  
 def run_query(query=''): 
    
@@ -31,22 +17,33 @@ def run_query(query=''):
 
 file = open("./registro.txt", "w")
 file.close()
+
+sql = "INSERT INTO segundatabla(Nombre,NumeroHash) VALUES (%s, %s)"
+def clave_ordenacion(tupla):
+  return (str(tupla[1]), tupla[0])
+
+datos = [ (3, 1), (2, 3), (3, 2), (1, 2), (4, 1), (4,2), (3,3)]
+def apertura():
+    path = "C:/Users/Ismael/Desktop/ficheros"
+    ficheros = os.listdir(path) 
+    val = []
+    for fichero in ficheros:
+        if os.path.isfile(os.path.join(path, fichero)):
+            t = FuncionHash.getmd5file("C:/Users/Ismael/Desktop/ficheros/" + fichero)
+            val.append((fichero,t))
+            sorted(val, key=clave_ordenacion)
+            val.sort(reverse=True)
+    return val
+
+AperturaBaseDatos.cursor.executemany(sql, apertura())
+AperturaBaseDatos.connection.commit()
+
 while(True):
     c = 0
-    val1 = "SELECT * FROM segundatabla" #se saca la lista del sql
+    val1 = "SELECT Nombre, NumeroHash FROM segundatabla" #se saca la lista del sql
     val1 = run_query(val1)
-    print(val1)
     while(c<30):
         
-        v = FuncionHash.getmd5file("C:/Users/Ismael/Desktop/new.csv")
-        p = FuncionHash.getmd5file("C:/Users/Ismael/Desktop/horario_provisional.png")
-        x = FuncionHash.getmd5file("C:/Users/Ismael/Desktop/ssii.txt")
-
-        val =[
-            ("new",v),
-            ("horario_provisional",p),
-            ("ssii",x)
-        ]
         
         archivo = "./log/" + str(datetime.now().strftime('%Y_%m'))
         
@@ -54,10 +51,15 @@ while(True):
         
         tf = False
         cambios=[]
-        for x,y in zip(val,val1):
+        print(val1)
+        print(apertura())
+        for x,y in zip(apertura(),val1):
             if x != y:
                 tf = True
                 cambios.append(x[0])
+                m = "UPDATE segundatabla SET NumeroHash ='"+ str(val1[0][1]) + "' WHERE Nombre ='"+ str(val1[0][0]) + "'"                    
+                AperturaBaseDatos.cursor.execute(m)
+                AperturaBaseDatos.connection.commit()
         
         if (tf):
             print("Se ha modificado el hash de un archivo")
