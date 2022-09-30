@@ -1,105 +1,97 @@
-Día 29 a las 20:29:  FALLO - El/Los archivo/s ['p.xlsx', 'horario_provisional.png'] ha/n sido modificado/s
-Día 29 a las 20:29:  FALLO - El/Los archivo/s ['p.xlsx', 'horario_provisional.png'] ha/n sido modificado/s
-Día 29 a las 20:29:  FALLO - El/Los archivo/s ['p.xlsx', 'horario_provisional.png'] ha/n sido modificado/s
-Día 29 a las 20:29:  FALLO - El/Los archivo/s ['p.xlsx', 'horario_provisional.png'] ha/n sido modificado/s
-Día 29 a las 20:30:  FALLO - El/Los archivo/s ['p.xlsx', 'horario_provisional.png'] ha/n sido modificado/s
-Día 29 a las 20:31:  FALLO - El/Los archivo/s ['p.xlsx', 'horario_provisional.png'] ha/n sido modificado/s
-Día 29 a las 20:32:  ACIERTO - El arhivo no ha sido alterado
-Día 29 a las 20:32:  ACIERTO - El arhivo no ha sido alterado
-Día 29 a las 20:32:  ACIERTO - El arhivo no ha sido alterado
-Día 29 a las 20:33:  ACIERTO - El arhivo no ha sido alterado
-Día 29 a las 20:33:  ACIERTO - El arhivo no ha sido alterado
-Día 29 a las 20:33:  ACIERTO - El arhivo no ha sido alterado
-Día 29 a las 20:33:  ACIERTO - El arhivo no ha sido alterado
-Día 29 a las 20:33:  ACIERTO - El arhivo no ha sido alterado
-Día 29 a las 20:34:  ACIERTO - El arhivo no ha sido alterado
-Día 29 a las 20:34:  ACIERTO - El arhivo no ha sido alterado
-Día 29 a las 20:34:  ACIERTO - El arhivo no ha sido alterado
-Día 29 a las 20:34:  ACIERTO - El arhivo no ha sido alterado
-Día 29 a las 20:34:  ACIERTO - El arhivo no ha sido alterado
-Día 29 a las 20:34:  ACIERTO - El arhivo no ha sido alterado
-Día 29 a las 20:35:  ACIERTO - El arhivo no ha sido alterado
-Día 29 a las 20:35:  ACIERTO - El arhivo no ha sido alterado
-Día 29 a las 20:35:  ACIERTO - El arhivo no ha sido alterado
-Día 29 a las 20:35:  ACIERTO - El arhivo no ha sido alterado
-Día 29 a las 20:35:  ACIERTO - El arhivo no ha sido alterado
-Día 29 a las 20:35:  ACIERTO - El arhivo no ha sido alterado
-Día 29 a las 20:36:  ACIERTO - El arhivo no ha sido alterado
-Día 29 a las 20:36:  ACIERTO - El arhivo no ha sido alterado
-Día 29 a las 20:36:  ACIERTO - El arhivo no ha sido alterado
-Día 29 a las 20:36:  ACIERTO - El arhivo no ha sido alterado
-Día 29 a las 20:36:  ACIERTO - El arhivo no ha sido alterado
-Día 29 a las 20:36:  ACIERTO - El arhivo no ha sido alterado
-Día 29 a las 20:37:  ACIERTO - El arhivo no ha sido alterado
-Día 29 a las 20:37:  ACIERTO - El arhivo no ha sido alterado
-Día 29 a las 20:38:  ACIERTO - El arhivo no ha sido alterado
-Día 29 a las 20:38:  ACIERTO - El arhivo no ha sido alterado
-Día 29 a las 20:39:  ACIERTO - El arhivo no ha sido alterado
-Día 29 a las 20:39:  ACIERTO - El arhivo no ha sido alterado
-Día 29 a las 20:39:  ACIERTO - El arhivo no ha sido alterado
-Día 29 a las 20:39:  ACIERTO - El arhivo no ha sido alterado
-Día 29 a las 20:39:  ACIERTO - El arhivo no ha sido alterado
-Día 29 a las 20:39:  ACIERTO - El arhivo no ha sido alterado
-Día 29 a las 20:40:  FALLO - El/Los archivo/s ['p.xlsx'] ha/n sido modificado/s
-Día 29 a las 20:40:  FALLO - El/Los archivo/s ['p.xlsx'] ha/n sido modificado/s
-Día 29 a las 20:40:  FALLO - El/Los archivo/s ['p.xlsx'] ha/n sido modificado/s
-Día 29 a las 20:41:  ACIERTO - El arhivo no ha sido alterado
-Día 29 a las 20:41:  ACIERTO - El arhivo no ha sido alterado
-Día 29 a las 20:41:  ACIERTO - El arhivo no ha sido alterado
-Día 29 a las 20:41:  ACIERTO - El arhivo no ha sido alterado
-Día 29 a las 20:41:  FALLO - El/Los archivo/s ['p.xlsx', 'horario_provisional.png'] ha/n sido modificado/s
-Día 29 a las 20:42:  FALLO - El/Los archivo/s ['p.xlsx'] ha/n sido modificado/s
-Día 29 a las 20:42:  FALLO - El/Los archivo/s ['p.xlsx'] ha/n sido modificado/s
-Día 29 a las 20:42:  FALLO - El/Los archivo/s ['p.xlsx'] ha/n sido modificado/s
-Día 29 a las 20:42:  FALLO - El/Los archivo/s ['p.xlsx'] ha/n sido modificado/s
-Día 29 a las 20:42:  FALLO - El/Los archivo/s ['p.xlsx'] ha/n sido modificado/s
-Día 29 a las 20:42:  FALLO - El/Los archivo/s ['p.xlsx'] ha/n sido modificado/s
-Día 29 a las 20:43:  FALLO - El/Los archivo/s ['p.xlsx'] ha/n sido modificado/s
-Día 29 a las 20:43:  FALLO - El/Los archivo/s ['p.xlsx'] ha/n sido modificado/s
-Día 29 a las 20:43:  FALLO - El/Los archivo/s ['p.xlsx'] ha/n sido modificado/s
-Día 29 a las 20:43:  FALLO - El/Los archivo/s ['p.xlsx'] ha/n sido modificado/s
-Día 29 a las 20:43:  FALLO - El/Los archivo/s ['p.xlsx'] ha/n sido modificado/s
-Día 29 a las 20:43:  FALLO - El/Los archivo/s ['p.xlsx'] ha/n sido modificado/s
-Día 29 a las 20:43:  FALLO - El/Los archivo/s ['p.xlsx'] ha/n sido modificado/s
-Día 29 a las 20:43:  FALLO - El/Los archivo/s ['p.xlsx'] ha/n sido modificado/s
-Día 29 a las 20:44:  ACIERTO - El arhivo no ha sido alterado
-Día 29 a las 20:44:  ACIERTO - El arhivo no ha sido alterado
-Día 29 a las 20:45:  ACIERTO - El arhivo no ha sido alterado
-Día 29 a las 20:45:  FALLO - El/Los archivo/s ['p.xlsx'] ha/n sido modificado/s
-Día 29 a las 20:45:  FALLO - El/Los archivo/s ['p.xlsx'] ha/n sido modificado/s
-Día 29 a las 20:46:  ACIERTO - El arhivo no ha sido alterado
-Día 29 a las 20:46:  ACIERTO - El arhivo no ha sido alterado
-Día 29 a las 20:46:  ACIERTO - El arhivo no ha sido alterado
-Día 29 a las 20:46:  FALLO - El/Los archivo/s ['p.xlsx', 'horario_provisional.png'] ha/n sido modificado/s
-Día 29 a las 20:47:  FALLO - El/Los archivo/s ['p.xlsx'] ha/n sido modificado/s
-Día 29 a las 20:47:  FALLO - El/Los archivo/s ['p.xlsx'] ha/n sido modificado/s
-Día 29 a las 20:47:  FALLO - El/Los archivo/s ['p.xlsx'] ha/n sido modificado/s
-Día 29 a las 20:47:  FALLO - El/Los archivo/s ['p.xlsx'] ha/n sido modificado/s
-Día 29 a las 20:47:  FALLO - El/Los archivo/s ['p.xlsx'] ha/n sido modificado/s
-Día 29 a las 20:47:  FALLO - El/Los archivo/s ['p.xlsx'] ha/n sido modificado/s
-Día 29 a las 20:48:  FALLO - El/Los archivo/s ['p.xlsx'] ha/n sido modificado/s
-Día 29 a las 20:48:  FALLO - El/Los archivo/s ['p.xlsx', 'horario_provisional.png'] ha/n sido modificado/s
-Día 29 a las 20:50:  FALLO - El/Los archivo/s ['p.xlsx', 'horario_provisional.png'] ha/n sido modificado/s
-Día 29 a las 20:51:  FALLO - El/Los archivo/s ['p.xlsx', 'horario_provisional.png'] ha/n sido modificado/s
-Día 29 a las 20:51:  FALLO - El/Los archivo/s ['p.xlsx', 'horario_provisional.png'] ha/n sido modificado/s
-Día 29 a las 20:52:  FALLO - El/Los archivo/s ['p.xlsx', 'horario_provisional.png'] ha/n sido modificado/s
-Día 29 a las 20:52:  FALLO - El/Los archivo/s ['p.xlsx', 'horario_provisional.png'] ha/n sido modificado/s
-Día 29 a las 23:02:  FALLO - El/Los archivo/s ['p.xlsx', 'horario_provisional.png'] ha/n sido modificado/s
-Día 29 a las 23:02:  FALLO - El/Los archivo/s ['p.xlsx', 'horario_provisional.png'] ha/n sido modificado/s
-Día 29 a las 23:02:  FALLO - El/Los archivo/s ['p.xlsx', 'horario_provisional.png'] ha/n sido modificado/s
-Día 29 a las 23:02:  FALLO - El/Los archivo/s ['p.xlsx', 'horario_provisional.png'] ha/n sido modificado/s
-Día 29 a las 23:02:  FALLO - El/Los archivo/s ['p.xlsx', 'horario_provisional.png'] ha/n sido modificado/s
-Día 29 a las 23:03:  FALLO - El/Los archivo/s ['p.xlsx', 'horario_provisional.png'] ha/n sido modificado/s
-Día 29 a las 23:17:  FALLO - El/Los archivo/s ['ola.xlsx'] ha/n sido modificado/s
-Día 29 a las 23:18:  FALLO - El/Los archivo/s ['ola.xlsx'] ha/n sido modificado/s
-Día 29 a las 23:28:  FALLO - El/Los archivo/s ['ola.xlsx'] ha/n sido modificado/s
-Día 29 a las 23:48:  FALLO - El/Los archivo/s ['ola.xlsx'] ha/n sido modificado/s
-Día 29 a las 23:49:  FALLO - El/Los archivo/s ['ola.xlsx'] ha/n sido modificado/s
-Día 29 a las 23:57:  FALLO - El/Los archivo/s ['ola.xlsx'] ha/n sido modificado/s
-Día 30 a las 00:17:  FALLO - El/Los archivo/s ['ola.xlsx'] ha/n sido modificado/s
-Día 30 a las 00:18:  FALLO - El/Los archivo/s ['ola.xlsx'] ha/n sido modificado/s
-Día 30 a las 00:21:  FALLO - El/Los archivo/s ['ola.xlsx'] ha/n sido modificado/s
-Día 30 a las 00:23:  FALLO - El/Los archivo/s ['ola.xlsx'] ha/n sido modificado/s
-Día 30 a las 00:23:  FALLO - El/Los archivo/s ['ola.xlsx'] ha/n sido modificado/s
-Día 30 a las 00:26:  FALLO - El/Los archivo/s ['t.docx'] ha/n sido modificado/s
-Día 30 a las 00:33:  FALLO - El/Los archivo/s ['t.docx'] ha/n sido modificado/s
+Día 30 a las 12:53:  ACIERTO - El arhivo no ha sido alterado
+Día 30 a las 12:53:  ACIERTO - El arhivo no ha sido alterado
+Día 30 a las 12:53:  ACIERTO - El arhivo no ha sido alterado
+Día 30 a las 12:54:  ACIERTO - El arhivo no ha sido alterado
+Día 30 a las 12:54:  ACIERTO - El arhivo no ha sido alterado
+Día 30 a las 12:54:  ACIERTO - El arhivo no ha sido alterado
+Día 30 a las 12:55:  FALLO - El/Los archivo/s ['t.docx'] ha/n sido modificado/s
+Día 30 a las 12:55:  FALLO - El/Los archivo/s ['t.docx'] ha/n sido modificado/s
+Día 30 a las 12:56:  FALLO - El/Los archivo/s ['t.docx'] ha/n sido modificado/s
+Día 30 a las 12:56:  FALLO - El/Los archivo/s ['t.docx'] ha/n sido modificado/s
+Día 30 a las 12:57:  FALLO - El/Los archivo/s ['t.docx'] ha/n sido modificado/s
+Día 30 a las 12:57:  FALLO - El/Los archivo/s ['t.docx'] ha/n sido modificado/s
+Día 30 a las 12:57:  FALLO - El/Los archivo/s ['t.docx'] ha/n sido modificado/s
+Día 30 a las 12:58:  FALLO - El/Los archivo/s ['t.docx'] ha/n sido modificado/s
+Día 30 a las 12:59:  FALLO - El/Los archivo/s ['t.docx'] ha/n sido modificado/s
+Día 30 a las 12:59:  FALLO - El/Los archivo/s ['t.docx'] ha/n sido modificado/s
+Día 30 a las 13:04:  FALLO - El/Los archivo/s ['t.docx'] ha/n sido modificado/s
+Día 30 a las 13:12:  ACIERTO - El arhivo no ha sido alterado
+Día 30 a las 13:17:  ACIERTO - El arhivo no ha sido alterado
+Día 30 a las 13:17:  FALLO - El/Los archivo/s ['t.docx'] ha/n sido modificado/s
+Día 30 a las 13:17:  FALLO - El/Los archivo/s ['t.docx'] ha/n sido modificado/s
+Día 30 a las 13:18:  FALLO - El/Los archivo/s ['t.docx'] ha/n sido modificado/s
+Día 30 a las 13:19:  ACIERTO - El arhivo no ha sido alterado
+Día 30 a las 13:19:  FALLO - El/Los archivo/s ['t.docx'] ha/n sido modificado/s
+Día 30 a las 13:24:  ACIERTO - El arhivo no ha sido alterado
+Día 30 a las 13:24:  ACIERTO - El arhivo no ha sido alterado
+Día 30 a las 13:24:  ACIERTO - El arhivo no ha sido alterado
+Día 30 a las 13:24:  ACIERTO - El arhivo no ha sido alterado
+Día 30 a las 13:24:  FALLO - El/Los archivo/s ['t.docx'] ha/n sido modificado/s
+Día 30 a las 13:25:  ACIERTO - El arhivo no ha sido alterado
+Día 30 a las 13:25:  ACIERTO - El arhivo no ha sido alterado
+Día 30 a las 13:25:  ACIERTO - El arhivo no ha sido alterado
+Día 30 a las 13:25:  ACIERTO - El arhivo no ha sido alterado
+Día 30 a las 13:25:  ACIERTO - El arhivo no ha sido alterado
+Día 30 a las 13:25:  ACIERTO - El arhivo no ha sido alterado
+Día 30 a las 13:26:  ACIERTO - El arhivo no ha sido alterado
+Día 30 a las 13:26:  ACIERTO - El arhivo no ha sido alterado
+Día 30 a las 13:26:  ACIERTO - El arhivo no ha sido alterado
+Día 30 a las 13:26:  ACIERTO - El arhivo no ha sido alterado
+Día 30 a las 13:26:  ACIERTO - El arhivo no ha sido alterado
+Día 30 a las 13:26:  ACIERTO - El arhivo no ha sido alterado
+Día 30 a las 13:27:  ACIERTO - El arhivo no ha sido alterado
+Día 30 a las 13:27:  ACIERTO - El arhivo no ha sido alterado
+Día 30 a las 13:27:  ACIERTO - El arhivo no ha sido alterado
+Día 30 a las 13:27:  ACIERTO - El arhivo no ha sido alterado
+Día 30 a las 13:27:  ACIERTO - El arhivo no ha sido alterado
+Día 30 a las 13:27:  ACIERTO - El arhivo no ha sido alterado
+Día 30 a las 13:28:  ACIERTO - El arhivo no ha sido alterado
+Día 30 a las 13:28:  ACIERTO - El arhivo no ha sido alterado
+Día 30 a las 13:33:  ACIERTO - El arhivo no ha sido alterado
+Día 30 a las 13:33:  ACIERTO - El arhivo no ha sido alterado
+Día 30 a las 13:33:  ACIERTO - El arhivo no ha sido alterado
+Día 30 a las 13:33:  ACIERTO - El arhivo no ha sido alterado
+Día 30 a las 13:33:  FALLO - El/Los archivo/s ['t.docx'] ha/n sido modificado/s
+Día 30 a las 13:33:  ACIERTO - El arhivo no ha sido alterado
+Día 30 a las 13:34:  ACIERTO - El arhivo no ha sido alterado
+Día 30 a las 13:34:  ACIERTO - El arhivo no ha sido alterado
+Día 30 a las 13:34:  ACIERTO - El arhivo no ha sido alterado
+Día 30 a las 13:34:  ACIERTO - El arhivo no ha sido alterado
+Día 30 a las 13:34:  ACIERTO - El arhivo no ha sido alterado
+Día 30 a las 13:34:  ACIERTO - El arhivo no ha sido alterado
+Día 30 a las 13:35:  ACIERTO - El arhivo no ha sido alterado
+Día 30 a las 13:35:  ACIERTO - El arhivo no ha sido alterado
+Día 30 a las 13:35:  ACIERTO - El arhivo no ha sido alterado
+Día 30 a las 13:35:  ACIERTO - El arhivo no ha sido alterado
+Día 30 a las 13:35:  ACIERTO - El arhivo no ha sido alterado
+Día 30 a las 13:36:  ACIERTO - El arhivo no ha sido alterado
+Día 30 a las 13:36:  ACIERTO - El arhivo no ha sido alterado
+Día 30 a las 13:36:  ACIERTO - El arhivo no ha sido alterado
+Día 30 a las 13:36:  ACIERTO - El arhivo no ha sido alterado
+Día 30 a las 13:36:  ACIERTO - El arhivo no ha sido alterado
+Día 30 a las 13:37:  ACIERTO - El arhivo no ha sido alterado
+Día 30 a las 13:37:  ACIERTO - El arhivo no ha sido alterado
+Día 30 a las 13:37:  FALLO - El/Los archivo/s ['t.docx'] ha/n sido modificado/s
+Día 30 a las 13:38:  ACIERTO - El arhivo no ha sido alterado
+Día 30 a las 13:40:  FALLO - El/Los archivo/s ['~$t.docx', 't.docx'] ha/n sido modificado/s
+Día 30 a las 13:40:  FALLO - El/Los archivo/s ['t.docx'] ha/n sido modificado/s
+Día 30 a las 13:40:  FALLO - El/Los archivo/s ['t.docx'] ha/n sido modificado/s
+Día 30 a las 13:41:  ACIERTO - El arhivo no ha sido alterado
+Día 30 a las 13:41:  ACIERTO - El arhivo no ha sido alterado
+Día 30 a las 13:41:  ACIERTO - El arhivo no ha sido alterado
+Día 30 a las 13:42:  ACIERTO - El arhivo no ha sido alterado
+Día 30 a las 13:42:  ACIERTO - El arhivo no ha sido alterado
+Día 30 a las 13:51:  ACIERTO - El arhivo no ha sido alterado
+Día 30 a las 13:53:  ACIERTO - El arhivo no ha sido alterado
+Día 30 a las 13:54:  ACIERTO - El arhivo no ha sido alterado
+Día 30 a las 13:54:  ACIERTO - El arhivo no ha sido alterado
+Día 30 a las 13:54:  ACIERTO - El arhivo no ha sido alterado
+Día 30 a las 13:54:  ACIERTO - El arhivo no ha sido alterado
+Día 30 a las 13:54:  ACIERTO - El arhivo no ha sido alterado
+Día 30 a las 13:54:  ACIERTO - El arhivo no ha sido alterado
+Día 30 a las 13:55:  ACIERTO - El arhivo no ha sido alterado
+Día 30 a las 13:55:  ACIERTO - El arhivo no ha sido alterado
+Día 30 a las 13:55:  FALLO - El/Los archivo/s ['t.docx'] ha/n sido modificado/s
+Día 30 a las 13:55:  ACIERTO - El arhivo no ha sido alterado
+Día 30 a las 13:56:  ACIERTO - El arhivo no ha sido alterado
+Día 30 a las 13:56:  ACIERTO - El arhivo no ha sido alterado

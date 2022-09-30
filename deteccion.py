@@ -48,14 +48,18 @@ def apertura():
             if(FuncionHash.getsha256file):
                 val.sort(reverse=True)
     return val
+
 sql = "INSERT INTO segundatabla(Nombre,NumeroHash) VALUES (%s, %s)"
 AperturaBaseDatos.cursor.executemany(sql, apertura())
 AperturaBaseDatos.connection.commit()
 while(True):
-
     c = 0
     val1 = "SELECT * FROM segundatabla" #se saca la lista del sql
     val1 = run_query(val1)
+    val5 = apertura()
+    sql = "INSERT INTO cuartatabla(Nombre,NumeroHash) VALUES (%s, %s)"
+    AperturaBaseDatos.cursor.executemany(sql, val5)
+    AperturaBaseDatos.connection.commit()
     while(c<30):
         archivo = "./log/" + str(datetime.now().strftime('%Y_%m'))
         
@@ -63,16 +67,21 @@ while(True):
         
         tf = False
         cambios=[]
-        
-        for x,y in zip(apertura(),val1):
+        val5 = apertura()
+        for i in val5:
+            sql1 = "UPDATE cuartatabla SET NumeroHash ='"+ i[1] + "' WHERE Nombre ='"+ str(i[0]) + "'"
+            AperturaBaseDatos.cursor.execute(sql1)
+            AperturaBaseDatos.connection.commit() 
+        val2 = "SELECT * FROM cuartatabla" #se saca la lista del sql
+        val2 = run_query(val2)
+        for x,y in zip(val2,val1):
             if x != y:
                 tf = True
                 cambios.append(x[0])
-                print(val1)
-                AperturaBaseDatos.cursor.execute("DELETE FROM tabla3 WHERE SumaHashNumero ='" + str(val1[0][2]) + "'")
+                AperturaBaseDatos.cursor.execute("DELETE FROM cuartatabla WHERE SumaHashNumero ='" + str(val1[0][2]) + "'")
                 AperturaBaseDatos.connection.commit()
                 for i in val1:                           
-                    AperturaBaseDatos.cursor.execute("UPDATE tabla3 SET NumeroHash ='"+ i[1] + "' WHERE Nombre ='"+ str(i[0]) + "'")
+                    AperturaBaseDatos.cursor.execute("UPDATE cuartatabla SET NumeroHash ='"+ i[1] + "' WHERE Nombre ='"+ str(i[0]) + "'")
                     AperturaBaseDatos.connection.commit()
         if (tf):
             print("Se ha modificado el hash de un archivo")
@@ -98,4 +107,3 @@ while(True):
             file = open(archivo + ".txt", "a")
             file.write(os.linesep + "Han ocurrido un total de " + str(cont) + " fallos")
             file.close()
-
