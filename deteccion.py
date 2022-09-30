@@ -4,7 +4,17 @@ import os
 import AperturaBaseDatos
 from datetime import datetime
 
- 
+file = open("./config.txt", "r")
+config = []
+for line in file: 
+    line = line.strip() 
+    words = line.split("=")     
+    config.append(words[1])
+tiempo = config[0]
+directorio = config[1]
+file.close()
+
+
 def run_query(query=''): 
    
     cursor = AperturaBaseDatos.connection.cursor()
@@ -15,68 +25,70 @@ def run_query(query=''):
         data = None
     return data
 
-file = open("./registro.txt", "w")
-file.close()
-
-sql = "INSERT INTO segundatabla(Nombre,NumeroHash) VALUES (%s, %s)"
 def clave_ordenacion(tupla):
   return (str(tupla[1]), tupla[0])
 
-datos = [ (3, 1), (2, 3), (3, 2), (1, 2), (4, 1), (4,2), (3,3)]
 def apertura():
-    path = "C:/Users/Ismael/Desktop/ficheros"
-    ficheros = os.listdir(path) 
+    ficheros = os.listdir(directorio) 
     val = []
     for fichero in ficheros:
-        if os.path.isfile(os.path.join(path, fichero)):
-            t = FuncionHash.getmd5file("C:/Users/Ismael/Desktop/ficheros/" + fichero)
+        if os.path.isfile(os.path.join(directorio, fichero)):
+            if config[2] == "md5":
+                t = FuncionHash.getmd5file(directorio + fichero)
+            elif config[2] == "sha1":
+                t = FuncionHash.getsha1file(directorio + fichero)
+            else:
+                t = FuncionHash.getsha256file(directorio + fichero)
             val.append((fichero,t))
             sorted(val, key=clave_ordenacion)
-            val.sort(reverse=True)
+            if(FuncionHash.getmd5file):
+                val.sort(reverse=True)
+            if(FuncionHash.getsha1file):
+                val.sort(reverse=False)
+            if(FuncionHash.getsha256file):
+                val.sort(reverse=True)
     return val
-
+sql = "INSERT INTO segundatabla(Nombre,NumeroHash) VALUES (%s, %s)"
 AperturaBaseDatos.cursor.executemany(sql, apertura())
 AperturaBaseDatos.connection.commit()
-
 while(True):
+
     c = 0
-    val1 = "SELECT Nombre, NumeroHash FROM segundatabla" #se saca la lista del sql
+    val1 = "SELECT * FROM segundatabla" #se saca la lista del sql
     val1 = run_query(val1)
     while(c<30):
-        
-        
         archivo = "./log/" + str(datetime.now().strftime('%Y_%m'))
         
         file = open(archivo + ".txt", "a")
         
         tf = False
         cambios=[]
-        print(val1)
-        print(apertura())
+        
         for x,y in zip(apertura(),val1):
             if x != y:
                 tf = True
                 cambios.append(x[0])
-                m = "UPDATE segundatabla SET NumeroHash ='"+ str(val1[0][1]) + "' WHERE Nombre ='"+ str(val1[0][0]) + "'"                    
-                AperturaBaseDatos.cursor.execute(m)
+                print(val1)
+                AperturaBaseDatos.cursor.execute("DELETE FROM tabla3 WHERE SumaHashNumero ='" + str(val1[0][2]) + "'")
                 AperturaBaseDatos.connection.commit()
-        
+                for i in val1:                           
+                    AperturaBaseDatos.cursor.execute("UPDATE tabla3 SET NumeroHash ='"+ i[1] + "' WHERE Nombre ='"+ str(i[0]) + "'")
+                    AperturaBaseDatos.connection.commit()
         if (tf):
             print("Se ha modificado el hash de un archivo")
             file.write("Día " + str(datetime.now().strftime('%d')) + " a las " + str(datetime.now().strftime('%H:%M')) + ":  FALLO - El/Los archivo/s " + str(cambios) + " ha/n sido modificado/s" + os.linesep)
         else:
             print("No se ha modificado el hash de ningún archivo")
-            file.write("Día " + str(datetime.now().strftime('%d')) + " a las " + str(datetime.now().strftime('%H:%M')) + ":  ACIERTO - El arhivo no ha sido alterado" + os.linesep)        
+            file.write("Día " + str(datetime.now().strftime('%d')) + " a las " + str(datetime.now().strftime('%H:%M')) + ":  ACIERTO - El arhivo no ha sido alterado" + os.linesep) 
+        
         file.close()
         c=c+1
         
-        time.sleep(10) 
+        time.sleep(int(tiempo)) 
         despues = "./log/" + str(datetime.now().strftime('%Y_%m'))
         if despues != archivo:
-            file = open(archivo + ".txt", "r")
+            file = open(archivo + ".txt", "a")
             cont = 0
-            print(despues)
-            print(archivo)
             for line in file: 
                 line = line.strip() 
                 words = line.split(" ")     

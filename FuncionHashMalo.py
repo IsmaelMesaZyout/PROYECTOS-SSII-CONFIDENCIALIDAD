@@ -46,13 +46,17 @@ for fichero in ficheros:
 
 
 for i in val:           
-    AperturaBaseDatos.cursor.execute("INSERT INTO tabla3(Nombre,NumeroHash) VALUES (%s, %s)",(i[0], i[1]))
+    AperturaBaseDatos.cursor.execute("INSERT INTO cuartatabla(Nombre,NumeroHash) VALUES (%s, %s)",(i[0], i[1]))
     AperturaBaseDatos.connection.commit()
 cont = 0
 while(True):    
-    ficheros = os.listdir(path)              
+    ficheros = os.listdir(path) 
+                  
     user_input1 = input("¿Qué fichero quieres comprobar? Introduce el codigo de validacion del archivo: ")
     comprobacion(user_input1)
+    sql1 = "UPDATE cuartatabla SET NumeroHash ='"+ t[1] + "' WHERE Nombre ='"+ str(t[0]) + "'"
+    AperturaBaseDatos.cursor.execute(sql1)
+    AperturaBaseDatos.connection.commit()
     for fichero in ficheros:
         if os.path.isfile(os.path.join(path, fichero)):
             if config[2] == "md5":
@@ -61,28 +65,19 @@ while(True):
                 t = FuncionHash.getsha1file(path + fichero)
             else:
                 t = FuncionHash.getsha256file(path + fichero)
-            val.append((fichero,t))
-    for i in val:  
-        sql1 = "UPDATE tabla3 SET NumeroHash ='"+ i[1] + "' WHERE Nombre ='"+ str(i[0]) + "'"
-        AperturaBaseDatos.cursor.execute(sql1)
-        AperturaBaseDatos.connection.commit()  
-    val3 = "SELECT * FROM tabla3"
+            val.append((fichero,t))    
+    val3 = "SELECT SumaHashNumero, Nombre FROM cuartatabla"
     val3 = run_query(val3)
-    print(val3)
     for t in val3:
-        print(t)
-        if(str(user_input1) == str(t[2])):
-            val1 = "SELECT NumeroHash FROM tabla3 WHERE SumaHashNumero='" + str(user_input1) + "'"
+        if(str(user_input1) == str(t[0])):
+            val1 = "SELECT NumeroHash FROM cuartatabla WHERE SumaHashNumero='" + str(user_input1) + "'"
             val1 = run_query(val1)
-            val2 = "SELECT * FROM segundatabla WHERE Nombre='" + str(t[0]) + "'"
+            val2 = "SELECT * FROM segundatabla WHERE Nombre='" + str(t[1]) + "'"
             val2 = run_query(val2)
             if(comprobacion(user_input1)):
-                suma = str(t[2]) + str(val2[0][1]) #Servidor
+                suma = str(t[0]) + str(val2[0][1]) #Servidor
                 suma1 = str(user_input1) + str(val1[0][0]) #Cliente
                 if(suma1 == suma):
                     print("OK")
                 else:
                     print("NO OK")
-                    for i in val2:                           
-                        AperturaBaseDatos.cursor.execute("UPDATE tabla3 SET NumeroHash ='"+ i[1] + "' WHERE Nombre ='"+ str(i[0]) + "'")
-                        AperturaBaseDatos.connection.commit()
