@@ -1,4 +1,4 @@
-import FuncionHash
+import funcionHash
 import time
 import os
 import AperturaBaseDatos
@@ -34,32 +34,35 @@ def apertura():
     for fichero in ficheros:
         if os.path.isfile(os.path.join(directorio, fichero)):
             if config[2] == "md5":
-                t = FuncionHash.getmd5file(directorio + fichero)
+                t = funcionHash.getmd5file(directorio + fichero)
             elif config[2] == "sha1":
-                t = FuncionHash.getsha1file(directorio + fichero)
+                t = funcionHash.getsha1file(directorio + fichero)
             else:
-                t = FuncionHash.getsha256file(directorio + fichero)
+                t = funcionHash.getsha256file(directorio + fichero)
             val.append((fichero,t))
             sorted(val, key=clave_ordenacion)
-            if(FuncionHash.getmd5file):
-                val.sort(reverse=True)
-            if(FuncionHash.getsha1file):
+            if(funcionHash.getmd5file):
                 val.sort(reverse=False)
-            if(FuncionHash.getsha256file):
+            if(funcionHash.getsha1file):
                 val.sort(reverse=True)
+            if(funcionHash.getsha256file):
+                val.sort(reverse=False)
     return val
 
 sql = "INSERT INTO segundatabla(Nombre,NumeroHash) VALUES (%s, %s)"
 AperturaBaseDatos.cursor.executemany(sql, apertura())
 AperturaBaseDatos.connection.commit()
+
 while(True):
     c = 0
     val1 = "SELECT * FROM segundatabla" #se saca la lista del sql
     val1 = run_query(val1)
+
     val5 = apertura()
     sql = "INSERT INTO cuartatabla(Nombre,NumeroHash) VALUES (%s, %s)"
     AperturaBaseDatos.cursor.executemany(sql, val5)
     AperturaBaseDatos.connection.commit()
+
     while(c<30):
         archivo = "./log/" + str(datetime.now().strftime('%Y_%m'))
         
@@ -67,22 +70,25 @@ while(True):
         
         tf = False
         cambios=[]
+
         val5 = apertura()
         for i in val5:
             sql1 = "UPDATE cuartatabla SET NumeroHash ='"+ i[1] + "' WHERE Nombre ='"+ str(i[0]) + "'"
             AperturaBaseDatos.cursor.execute(sql1)
             AperturaBaseDatos.connection.commit() 
+
         val2 = "SELECT * FROM cuartatabla" #se saca la lista del sql
         val2 = run_query(val2)
+
         for x,y in zip(val2,val1):
             if x != y:
                 tf = True
                 cambios.append(x[0])
-                AperturaBaseDatos.cursor.execute("DELETE FROM cuartatabla WHERE SumaHashNumero ='" + str(val1[0][2]) + "'")
+
+            for i in val1:                           
+                AperturaBaseDatos.cursor.execute("UPDATE cuartatabla SET NumeroHash ='"+ i[1] + "' WHERE Nombre ='"+ str(i[0]) + "'")
                 AperturaBaseDatos.connection.commit()
-                for i in val1:                           
-                    AperturaBaseDatos.cursor.execute("UPDATE cuartatabla SET NumeroHash ='"+ i[1] + "' WHERE Nombre ='"+ str(i[0]) + "'")
-                    AperturaBaseDatos.connection.commit()
+
         if (tf):
             print("Se ha modificado el hash de un archivo")
             file.write("Día " + str(datetime.now().strftime('%d')) + " a las " + str(datetime.now().strftime('%H:%M')) + ":  FALLO - El/Los archivo/s " + str(cambios) + " ha/n sido modificado/s" + os.linesep)
@@ -93,7 +99,8 @@ while(True):
         file.close()
         c=c+1
         
-        time.sleep(int(tiempo)) 
+        time.sleep(int(tiempo))
+         
         despues = "./log/" + str(datetime.now().strftime('%Y_%m'))
         if despues != archivo:
             file = open(archivo + ".txt", "a")

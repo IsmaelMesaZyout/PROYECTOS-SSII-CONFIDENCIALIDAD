@@ -1,0 +1,90 @@
+Día 01 a las 20:11:  FALLO - El/Los archivo/s ['t.docx'] ha/n sido modificado/s
+Día 01 a las 20:14:  FALLO - El/Los archivo/s ['t.docx', 'q.pub', 'a.accdb'] ha/n sido modificado/s
+Día 01 a las 20:14:  FALLO - El/Los archivo/s ['t.docx'] ha/n sido modificado/s
+Día 01 a las 20:16:  ACIERTO - El arhivo no ha sido alterado
+Día 01 a las 20:16:  ACIERTO - El arhivo no ha sido alterado
+Día 01 a las 20:16:  ACIERTO - El arhivo no ha sido alterado
+Día 01 a las 20:16:  FALLO - El/Los archivo/s ['t.docx'] ha/n sido modificado/s
+Día 01 a las 20:16:  ACIERTO - El arhivo no ha sido alterado
+Día 01 a las 20:18:  FALLO - El/Los archivo/s ['t.docx', 'qqqqqqqqq.accdb'] ha/n sido modificado/s
+Día 01 a las 20:18:  FALLO - El/Los archivo/s ['t.docx'] ha/n sido modificado/s
+Día 01 a las 20:18:  FALLO - El/Los archivo/s ['t.docx'] ha/n sido modificado/s
+Día 01 a las 20:18:  FALLO - El/Los archivo/s ['t.docx'] ha/n sido modificado/s
+Día 01 a las 20:18:  FALLO - El/Los archivo/s ['t.docx'] ha/n sido modificado/s
+Día 01 a las 20:19:  FALLO - El/Los archivo/s ['t.docx'] ha/n sido modificado/s
+Día 01 a las 20:23:  FALLO - El/Los archivo/s ['t.docx', 'qqqqqqqqq.accdb'] ha/n sido modificado/s
+Día 01 a las 20:26:  FALLO - El/Los archivo/s ['t.docx', 'qqqqqqqqq.accdb'] ha/n sido modificado/s
+Día 01 a las 20:26:  FALLO - El/Los archivo/s ['t.docx', 'qqqqqqqqq.accdb'] ha/n sido modificado/s
+Día 01 a las 20:26:  FALLO - El/Los archivo/s ['t.docx', 'qqqqqqqqq.accdb'] ha/n sido modificado/s
+Día 01 a las 20:26:  FALLO - El/Los archivo/s ['t.docx', 'qqqqqqqqq.accdb'] ha/n sido modificado/s
+Día 01 a las 20:35:  ACIERTO - El arhivo no ha sido alterado
+Día 01 a las 20:35:  ACIERTO - El arhivo no ha sido alterado
+Día 01 a las 20:35:  FALLO - El/Los archivo/s ['t.docx'] ha/n sido modificado/s
+Día 01 a las 20:36:  FALLO - El/Los archivo/s ['qqqqqqqqq.accdb', 't.docx'] ha/n sido modificado/s
+Día 01 a las 20:36:  FALLO - El/Los archivo/s ['qqqqqqqqq.accdb', 't.docx'] ha/n sido modificado/s
+Día 01 a las 20:36:  FALLO - El/Los archivo/s ['qqqqqqqqq.accdb', 't.docx'] ha/n sido modificado/s
+Día 01 a las 20:36:  FALLO - El/Los archivo/s ['qqqqqqqqq.accdb', 't.docx'] ha/n sido modificado/s
+Día 01 a las 20:36:  FALLO - El/Los archivo/s ['qqqqqqqqq.accdb'] ha/n sido modificado/s
+Día 01 a las 20:36:  ACIERTO - El arhivo no ha sido alterado
+Día 01 a las 20:37:  ACIERTO - El arhivo no ha sido alterado
+Día 01 a las 20:37:  ACIERTO - El arhivo no ha sido alterado
+Día 01 a las 20:37:  ACIERTO - El arhivo no ha sido alterado
+Día 01 a las 20:37:  ACIERTO - El arhivo no ha sido alterado
+Día 01 a las 20:37:  FALLO - El/Los archivo/s ['t.docx'] ha/n sido modificado/s
+Día 01 a las 20:37:  FALLO - El/Los archivo/s ['qqqqqqqqq.accdb', 't.docx'] ha/n sido modificado/s
+Día 01 a las 20:38:  FALLO - El/Los archivo/s ['qqqqqqqqq.accdb', 't.docx'] ha/n sido modificado/s
+Día 01 a las 20:38:  FALLO - El/Los archivo/s ['qqqqqqqqq.accdb', 't.docx'] ha/n sido modificado/s
+Día 01 a las 20:38:  FALLO - El/Los archivo/s ['qqqqqqqqq.accdb'] ha/n sido modificado/s
+Día 01 a las 20:38:  FALLO - El/Los archivo/s ['qqqqqqqqq.accdb'] ha/n sido modificado/s
+Día 01 a las 20:38:  ACIERTO - El arhivo no ha sido alterado
+Día 01 a las 20:38:  ACIERTO - El arhivo no ha sido alterado
+Día 01 a las 20:39:  ACIERTO - El arhivo no ha sido alterado
+Día 01 a las 20:39:  ACIERTO - El arhivo no ha sido alterado
+Día 01 a las 20:39:  ACIERTO - El arhivo no ha sido alterado
+Día 01 a las 20:42:  FALLO - El/Los archivo/s ['p.txt', 'q.accdb'] ha/n sido modificado/s
+Día 01 a las 20:43:  FALLO - El/Los archivo/s ['p.txt', 'q.accdb'] ha/n sido modificado/s
+Día 01 a las 20:43:  ACIERTO - El arhivo no ha sido alterado
+Día 01 a las 20:43:  ACIERTO - El arhivo no ha sido alterado
+Día 01 a las 20:44:  FALLO - El/Los archivo/s ['t.docx'] ha/n sido modificado/s
+Día 01 a las 20:44:  FALLO - El/Los archivo/s ['t.docx'] ha/n sido modificado/s
+Día 01 a las 20:44:  FALLO - El/Los archivo/s ['t.docx'] ha/n sido modificado/s
+Día 01 a las 20:44:  FALLO - El/Los archivo/s ['t.docx'] ha/n sido modificado/s
+Día 01 a las 20:44:  ACIERTO - El arhivo no ha sido alterado
+Día 01 a las 20:44:  ACIERTO - El arhivo no ha sido alterado
+Día 01 a las 20:45:  ACIERTO - El arhivo no ha sido alterado
+Día 01 a las 20:45:  ACIERTO - El arhivo no ha sido alterado
+Día 01 a las 20:46:  ACIERTO - El arhivo no ha sido alterado
+Día 01 a las 20:46:  FALLO - El/Los archivo/s ['t.docx'] ha/n sido modificado/s
+Día 01 a las 20:46:  FALLO - El/Los archivo/s ['t.docx'] ha/n sido modificado/s
+Día 01 a las 20:46:  FALLO - El/Los archivo/s ['t.docx'] ha/n sido modificado/s
+Día 01 a las 20:46:  ACIERTO - El arhivo no ha sido alterado
+Día 01 a las 20:46:  ACIERTO - El arhivo no ha sido alterado
+Día 01 a las 20:47:  ACIERTO - El arhivo no ha sido alterado
+Día 01 a las 20:47:  ACIERTO - El arhivo no ha sido alterado
+Día 01 a las 20:47:  ACIERTO - El arhivo no ha sido alterado
+Día 01 a las 20:47:  ACIERTO - El arhivo no ha sido alterado
+Día 01 a las 20:47:  ACIERTO - El arhivo no ha sido alterado
+Día 01 a las 20:48:  ACIERTO - El arhivo no ha sido alterado
+Día 01 a las 20:48:  ACIERTO - El arhivo no ha sido alterado
+Día 01 a las 20:50:  ACIERTO - El arhivo no ha sido alterado
+Día 01 a las 20:50:  ACIERTO - El arhivo no ha sido alterado
+Día 01 a las 20:52:  ACIERTO - El arhivo no ha sido alterado
+Día 01 a las 20:52:  ACIERTO - El arhivo no ha sido alterado
+Día 01 a las 20:52:  FALLO - El/Los archivo/s ['t.docx'] ha/n sido modificado/s
+Día 01 a las 20:53:  FALLO - El/Los archivo/s ['t.docx'] ha/n sido modificado/s
+Día 01 a las 20:53:  FALLO - El/Los archivo/s ['t.docx'] ha/n sido modificado/s
+Día 01 a las 20:53:  FALLO - El/Los archivo/s ['t.docx'] ha/n sido modificado/s
+Día 01 a las 20:53:  FALLO - El/Los archivo/s ['p.xlsx', 't.docx'] ha/n sido modificado/s
+Día 01 a las 20:54:  FALLO - El/Los archivo/s ['p.xlsx'] ha/n sido modificado/s
+Día 01 a las 20:54:  ACIERTO - El arhivo no ha sido alterado
+Día 01 a las 20:54:  FALLO - El/Los archivo/s ['p.xlsx'] ha/n sido modificado/s
+Día 01 a las 20:55:  FALLO - El/Los archivo/s ['p.xlsx'] ha/n sido modificado/s
+Día 01 a las 20:55:  FALLO - El/Los archivo/s ['p.xlsx'] ha/n sido modificado/s
+Día 01 a las 20:55:  FALLO - El/Los archivo/s ['p.xlsx'] ha/n sido modificado/s
+Día 01 a las 20:55:  FALLO - El/Los archivo/s ['p.xlsx'] ha/n sido modificado/s
+Día 01 a las 20:55:  FALLO - El/Los archivo/s ['p.xlsx'] ha/n sido modificado/s
+Día 01 a las 20:55:  FALLO - El/Los archivo/s ['p.xlsx'] ha/n sido modificado/s
+Día 01 a las 21:02:  ACIERTO - El arhivo no ha sido alterado
+Día 01 a las 21:02:  ACIERTO - El arhivo no ha sido alterado
+Día 01 a las 21:03:  ACIERTO - El arhivo no ha sido alterado
+Día 01 a las 21:03:  ACIERTO - El arhivo no ha sido alterado
